@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricafkfarm",
+  "version": "1.0.0",
+  "name": "Fabric AFK Farm",
+  "description": "Automatic farming assistant with configurable intervals",
+  "authors": ["Your Name"],
+  "contact": {
+    "homepage": "https://example.com",
+    "sources": "https://github.com/yourname/fabricafkfarm"
+  },
+  "license": "MIT",
+  "icon": "assets/fabricafkfarm/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.mcmodding.fabricafkfarm.FabricAFKFarmMod"],
+    "client": ["com.mcmodding.fabricafkfarm.client.FabricAFKFarmClient"],
+    "modmenu": ["com.mcmodding.fabricafkfarm.client.config.ModConfigScreen"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.4",
+    "cloth-config": ">=11.0.0"
+  }
+}
